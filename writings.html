@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="http://codd.cs.gsu.edu/~kparisagafonov1/prj2/home.css">
+</head>
+<body background="http://codd.cs.gsu.edu/~kparisagafonov1/prj2/prj2Bground.jpg">
+        <h1>Epic Writings</h1>
+        <table>
+          <tr>
+            <th onclick="window.location='http://codd.cs.gsu.edu/~kparisagafonov1/prj2/welcome.html'"> My home</th>
+            <th onclick="window.location='http://codd.cs.gsu.edu/~kparisagafonov1/prj2/images.html'">Images</th>
+            <th onclick="window.location='http://codd.cs.gsu.edu/~kparisagafonov1/prj2/writings.html'">Writings</th>
+            <th onclick="window.location='http://codd.cs.gsu.edu/~kparisagafonov1/prj2/sign.html'">sign in/out</th>
+          </tr>
+        </table>
+        <br>
+        <h2>Write whatever you want!</h2>
+        <br>
+        <!--
+        <?php
+    $server = mysql_connect("server", "username", "password");
+    $db = mysql_select_db("images", $server);
+    $query = mysql_query("SELECT * FROM Jobs");
+    ?> -->
+
+
+        <br>
+        <br>
+        <textarea rows="8" cols="70" name="comment" form="usrform">
+        Put a short writing here to be displayed on the blog...</textarea>
+<br>
+<br>
+        <form action="upload.php" method="post" enctype="multipart/form-data" id = "usrform">
+        	<input type="submit">
+		</form>
+	</form>
+        </body>
+</html>
+

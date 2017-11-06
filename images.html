@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="http://codd.cs.gsu.edu/~kparisagafonov1/prj2/home.css">
+</head>
+<body background="http://codd.cs.gsu.edu/~kparisagafonov1/prj2/prj2Bground.jpg">             
+        <h1>Wonderful Images</h1>
+        <table>
+          <tr>
+            <th onclick="window.location='http://codd.cs.gsu.edu/~kparisagafonov1/prj2/welcome.html'"> My home</th>
+            <th onclick="window.location='http://codd.cs.gsu.edu/~kparisagafonov1/prj2/images.html'">Images</th>
+            <th onclick="window.location='http://codd.cs.gsu.edu/~kparisagafonov1/prj2/writings.html'">Writings</th>
+            <th onclick="window.location='http://codd.cs.gsu.edu/~kparisagafonov1/prj2/sign.html'">sign in/out</th>
+          </tr>
+        </table>
+        <br>
+	<h2>This Amazing Collection of images collected around the globe is sure to wow you. Feel free to submit some of your own.</h2>
+        <br>
+        <!--
+        <?php
+    $server = mysql_connect("server", "username", "password");
+    $db = mysql_select_db("images", $server);
+    $query = mysql_query("SELECT * FROM Jobs");
+    ?> -->
+
+
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+        Select image to upload:
+        <input type="file" name="fileToUpload" id="fileToUpload">
+        <input type="submit" value="Upload Image" name="submit">
+        </form>
+        </body>
+</html>
+
